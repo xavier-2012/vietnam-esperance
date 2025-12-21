@@ -4,31 +4,97 @@
   <meta charset="UTF-8">
 <title>Vietnam Esperance</title>
 <body>
-  <h1 style="color: red; text-align :center">Notre Histoire</h1>
+  <title>Vietnam Espérance</title>
+  <style>
+    /* ====== Styles généraux ====== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    header {
+      background-color: #fff;
+      border-bottom: 3px solid #00aaff;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px 20px;
+      display: block;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    /* ====== Couleurs des boutons ====== */
+    nav ul li:nth-child(1) a { background-color: #c694d6; } /* violet */
+    nav ul li:nth-child(2) a { background-color: #2e6fa3; } /* bleu foncé */
+    nav ul li:nth-child(3) a { background-color: #33a4cf; } /* bleu clair */
+    nav ul li:nth-child(4) a { background-color: #f7d37b; } /* jaune */
+nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
+
+
+    /* ====== Effets ====== */
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #00aaff;
+      color: white;
+    }
+
+    main {
+      text-align: center;
+      padding: 40px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="association.html" class="active">L'association</a></li>                                                                 <li><a href="actions.html">Nos actions</a></li>
+   <li><a href="contact.html">Contacts</a></li>
+  <li><a href="don.html">Faire un don</a></li>
+   <li><a href="histoire.html">un peu d'histoire</a></li>  
+ </ul>
+    </nav>
+  </header>
+
+  <main>
+  <h1 style="color: red; text-align :center;font-size: 60px;">Notre Histoire</h1>
 
 <h2 style="text-align: center;">L'Histoire de Vietnam Espérance</h2>
 <div style="display: flex;gap:10px;">
 <div style="position:relative; display:inline-block;">
-  <img src="image_esperance.jpg" style="width:1000px;">
-  <span style="
-    position:absolute;
-    top:60%;  /* positionne le texte plus haut pour éviter la superposition */
-    left:50%;
-    transform:translate(-50%, -50%);
-    color:#218838;  /* vert encore plus foncé */
-    font-size:150px;  /* taille du texte augmentée */
-    font-weight:900;
-    text-align:center;  /* centrer le texte */
-    white-space:nowrap;">  <!-- empêcher le texte de se décomposer sur plusieurs lignes -->
-   DU VIETNAM 
-  </span>
+  <img src="image_esperance.png" style="width:1000px;">
+  
+  
 </div>
-<p>L’histoire de Vietnam Espérance débute en 1994, à la suite d’un événement aussi simple que marquant. Cette année-là, d’anciens soldats français ayant servi en Indochine entreprennent un voyage de mémoire au Vietnam. Après avoir revisité les lieux de leur passé, ils décident de faire une dernière étape à Hanoï avant leur retour en France.
-Assis sur un banc, deux d’entre eux échangent leurs souvenirs lorsqu’un Vietnamien s’installe à leurs côtés. Après quelques minutes d’observation, il s’adresse à l’un d’eux par ces mots : « Mon lieutenant ». Quarante ans après le départ des troupes françaises, l’émotion est immense. L’homme se révèle être un ancien soldat vietnamien ayant servi sous les ordres du lieutenant Bernard Mania, futur fondateur de l’association.
+<p style="font-size: 30px;">L’histoire de Vietnam Espérance débute en 1994, à la suite d’un événement aussi simple que marquant.<br>
+   Cette année-là, d’anciens soldats français ayant servi en Indochine entreprennent un voyage de mémoire au Vietnam. Après avoir revisité les lieux de leur passé, ils décident de faire une dernière étape à Hanoï avant leur retour en France.
+Assis sur un banc, deux d’entre eux échangent leurs souvenirs lorsqu’un Vietnamien s’installe à leurs côtés. Après quelques minutes d’observation, il s’adresse à l’un d’eux par ces mots : « Mon lieutenant ».</div>
+<p style="font-size: 30px;"> Quarante ans après le départ des troupes françaises, l’émotion est immense. L’homme se révèle être un ancien soldat vietnamien ayant servi sous les ordres du lieutenant Bernard Mania, futur fondateur de l’association.
 De cette rencontre inattendue naît un échange profond. Le Vietnamien explique alors la situation préoccupante de l’Église catholique au nord du pays : absence de prêtres, lieux de culte détruits ou abandonnés, liberté religieuse extrêmement limitée. Son message est clair : il faut aider.
 Touchés, les anciens soldats décident de prolonger leur séjour de plusieurs jours à Hanoï. Ils rencontrent les responsables religieux encore présents et prennent contact, à leur retour en France, avec les Missions Étrangères de Paris, notamment le père Etcharenne, dont le pays de mission était le Vietnam.
 De ces démarches et de cette rencontre fondatrice naît l’association Vietnam Espérance, avec pour vocation de soutenir l’Église vietnamienne et d’apporter une aide concrète aux communautés chrétiennes du pays.</p>
-</div>
+
 <div style="text-align :center">
 <a href="index.html" class="btn">← Retour à l'accueil</a>
 <div/>
