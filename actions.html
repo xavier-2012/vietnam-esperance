@@ -61,8 +61,88 @@ nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
       text-align: center;
       padding: 40px;
     }
+    div p {
+      font-size: 25px;
+    }
+ .boite1 {
+ max-width: 300px;
+ margin: 40px;
+ background-color: #ffffff;
+ padding:40px;
+ border: 3px solid #ddd;
+ border-radius: 10px;
+ box-shadow: -3px 3px 7px gray;
+ flex: 1;
+}
+ .boite2  {
+ max-width: 45%;
+ margin: 40px;
+ background-color: #ffffff;
+ padding :40px;
+ border:3px solid #ddd;
+ border-radius: 10px;
+ box-shadow: -3px 3px 7px gray;
+ flex: 1;
+}
+ .boite3 {
+ max-width: 300px;
+ margin: 40px;
+ background-color: #ffffff;
+ padding:40px;
+ border: 3px solid #ddd;
+ border-radius: 10px;
+ box-shadow: -3px 3px 7px gray;
+ flex: 1;
+}
+ .boite4 {
+ max-width: 45%;
+ margin: 40px;
+ background-color: #ffffff;
+ padding :40px;
+ border:3px solid #ddd;
+ border-radius: 10px;
+ box-shadow: -3px 3px 7px gray;
+ flex: 1;
+}
+ .boite5 {
+ max-width: 45%;
+ margin: 40px;
+ background-color: #ffffff;
+ padding :40px;
+ border:3px solid #ddd;
+ border-radius: 10px;
+ box-shadow: -3px 3px 7px gray;
+ flex: 1;
+}
+    .grdboite {
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-areas:
+a . b
+. c .
+d . e
+gap: 20px;
+}
+{
+.boite:nth-child(1){grid-area:a;}
+.boite:nth-child(2){grid-area:b;}
+.boite:nth-child(3){grid-area:c;}
+.boite:nth-child(4){grid-area:d;}
+.boite:nth-child(5){grid-area:e;}
+}
 
-  </style>
+.boitedebut p {
+  font-size: 25px;
+  color: #f55f5f;
+}
+ h1{
+color: red
+ }
+ 
+ 
+ 
+ 
+ </style>
 </head>
 
 <body>
@@ -79,23 +159,48 @@ nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
   </header>
 
   <main>
-  <h1 style="color: green">Nos actions</h1>
+  <h1>Nos actions</h1>
 </head>
-  <p style="font-size: 25px;">L’association Vietnam Espérance agit au Vietnam auprès des populations les plus défavorisées, en étroite collaboration avec les communautés religieuses locales. Son action s’est progressivement déployée sur l’ensemble du pays, du sud jusqu’au nord, malgré des contextes parfois complexes.
 
-Les interventions de Vietnam Espérance s’articulent autour de cinq axes complémentaires.
-1. Nourrir et répondre à l’urgence
-L’association intervient ponctuellement lors de situations d’urgence, notamment en cas de catastrophes naturelles, afin de permettre la distribution de nourriture de première nécessité aux populations les plus isolées.
-2. Accompagner des projets existants
-Vietnam Espérance soutient durablement des écoles, foyers et centres d’accueil rencontrant des difficultés financières ponctuelles, afin d’assurer la continuité de leurs actions éducatives et sociales.
+<section class="boitedebut">
+
+  <p> l'association Vietnam Espérance agit au Vietnam auprès des populations les plus défavorisées,
+     en étroite collaboration avec les communautés religieuses locales. Son action s’est progressivement déployée sur l’ensemble du pays,
+      du sud jusqu’au nord, malgré des contextes parfois complexes.
+       Les interventions de Vietnam Espérance s’articulent autour de cinq axes complémentaires.
+  </section>
+<section class="grdboite">
+  <section class="boite1">            
+  1. Nourrir et répondre à l’urgence
+L’association intervient ponctuellement lors de situations d’urgence, notamment en cas de catastrophes naturelles,
+ afin de permettre la distribution de nourriture de première nécessité aux populations les plus isolées.
+</section>
+<section class="boite2">
+2.accompagner des projets existants
+Vietnam Espérance soutient durablement des écoles, foyers et centres d’accueil rencontrant des difficultés financières ponctuelles,
+ afin d’assurer la continuité de leurs actions éducatives et sociales.
+</section>
+<section class="boite3">
 3. Développer des projets humanitaires durables
-L’association met en place des projets visant à améliorer durablement les conditions de vie, notamment par l’installation de panneaux solaires et l’accès à l’eau potable grâce à des systèmes de filtration.
-4. Soutenir l’éducation et la formation
-L’éducation est un pilier essentiel, en particulier auprès des minorités ethniques vivant dans des régions reculées. L’association soutient des projets permettant l’apprentissage de la langue nationale tout en respectant les cultures locales.
-5. Construire et rénover
-Vietnam Espérance accompagne la construction et la rénovation de lieux de culte, en particulier dans les zones où les infrastructures sont anciennes ou dégradées, afin de soutenir la vie des communautés locales.</p>
-<div style="text-align :center">
-<a href="index.html" class="btn">← Retour à l'accueil</a>
+L’association met en place des projets visant à améliorer durablement les conditions de vie,
+ notamment par l’installation de panneaux solaires qui permette d'economiser 300 à 400 euros
+ et l’accès à l’eau potable grâce à des systèmes de filtration.
+</section>
+ <section class="boite4">
+ 4. Soutenir l’éducation et la formation
+L’éducation est un pilier essentiel, en particulier auprès des minorités ethniques vivant dans des régions reculées. L’association soutient
+ des projets permettant l’apprentissage de la langue nationale tout en respectant les cultures locales.
+</section>
+ <section class="boite5">
+ 5. Construire et rénover
+Vietnam Espérance accompagne la construction et la rénovation de lieux de culte, en particulier dans les zones où les infrastructures sont
+ anciennes ou dégradées, afin de soutenir la vie des communautés locales.
+</section>
+</section>
+</p>
+ <div style="text-align :center">
+ 
+  <a href="index.html" class="btn">← Retour à l'accueil</a>
 <div/>
 <style>
   .btn {
