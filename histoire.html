@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 <title>Vietnam Esperance</title>
 <body>
@@ -92,18 +93,47 @@ nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
    font-size: 60px;
     } 
   p {
-  font-size 25px;
+  font-size: 20px
   }
  
- section {
- max-width:600px;
- margin: 40px left;
+ .boite1 {
+ max-width: 300x;
+ margin: 40px
  background-color: #ffffff;
- padding: 40px;
+ padding:40px
  border: 3px solid #ddd;
  border-radius: 10px;
  box-shadow: -3px 3px 7px gray;
+ flex: 1;
 }
+ .boite2  {
+ max-width: 45%;
+ margin: 40px
+ background-color: #ffffff;
+ padding :40px;
+ border:3px solid #ddd;
+ border-radius: 10px;
+ box-shadow: -3px 3px 7px gray;
+ flex: 1;
+}
+section img {
+  max-width: 100%;
+  height: auto;
+ display: block;
+} 
+.grdboite {
+display: flex;
+gap: 15px;
+justify-content: center;
+align-items: stretch;
+flex-wrap: wrap;
+min-width: 300px;
+}
+
+
+
+
+
 
 body {
 margin: 30px;
@@ -135,17 +165,27 @@ margin: 30px;
   L’histoire de Vietnam Espérance débute en 1994, à la suite d’un événement aussi simple que marquant.
 </p>
   <img src="image_esperance.png" />
-<Section>
+
+  <section class="grdboite">
+  <section class="boite1">
+ <img src="C:\Users\guill\Documents\vietnam-esperance\img_pagode.jpg">
   <p>
   Cette année-là, d’anciens soldats français ayant servi en Indochine entreprennent un voyage de mémoire au Vietnam. Après avoir revisité les
    lieux de leur passé, ils décident de faire une dernière étape à Hanoï avant leur retour en France.
 Assis sur un banc, deux d’entre eux échangent leurs souvenirs lorsqu’un Vietnamien s’installe à leurs côtés. Après quelques minutes
  d’observation, il s’adresse à l’un d’eux par ces mots : « Mon lieutenant ».
 </p>
-  </Section>
+  </section>
+  
+   
 
-   </div>
-<p>
+
+  <section class="boite2">
+
+
+
+
+   <p>
    Quarante ans après le départ des troupes françaises, l’émotion est immense. L’homme se révèle être un ancien soldat vietnamien ayant servi sous
     les ordres du lieutenant Bernard Mania, futur fondateur de l’association.
 De cette rencontre inattendue naît un échange profond. Le Vietnamien explique alors la situation préoccupante de l’Église catholique au nord du
@@ -156,6 +196,9 @@ Touchés, les anciens soldats décident de prolonger leur séjour de plusieurs j
 De ces démarches et de cette rencontre fondatrice naît l’association Vietnam Espérance, avec pour vocation de soutenir l’Église vietnamienne et
  d’apporter une aide concrète aux communautés chrétiennes du pays.
 </p>
+</section>
+
+  </section>
 <div class="boutons">
 <a href="index.html" class="btn">← Retour à l'accueil</a>
 <div/>
