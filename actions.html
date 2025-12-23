@@ -5,7 +5,7 @@
   <title>Vietnam Espérance</title>
 </head>
 <body>
-   <title>Vietnam Espérance</title>
+   
   <style>
     /* ====== Styles généraux ====== */
     body {
@@ -18,6 +18,10 @@
     header {
       background-color: #fff;
       border-bottom: 3px solid #00aaff;
+     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     }
 
     nav ul {
@@ -123,24 +127,46 @@ a . b
 d . e
 gap: 20px;
 }
-{
+
 .boite:nth-child(1){grid-area:a;}
 .boite:nth-child(2){grid-area:b;}
 .boite:nth-child(3){grid-area:c;}
 .boite:nth-child(4){grid-area:d;}
 .boite:nth-child(5){grid-area:e;}
-}
+
 
 .boitedebut p {
   font-size: 25px;
   color: #f55f5f;
+
 }
  h1{
 color: red
  }
+ .container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* supprime les petits espaces sous l'image */
+  margin: auto;   /* centrer si nécessaire */
+ border-radius:10px;
+}
  
- 
- 
+  .btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid #cc5c5c;   /* Bordure rouge moyen */
+    background:  #f55f5f;         /* ❤️ Rouge clair pastel */
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align :center;
+ }
+
+  .btn:hover {
+    background: #f77b7b;         /* Un peu plus vif au survol */
+  }
  
  </style>
 </head>
@@ -168,58 +194,67 @@ color: red
      en étroite collaboration avec les communautés religieuses locales. Son action s’est progressivement déployée sur l’ensemble du pays,
       du sud jusqu’au nord, malgré des contextes parfois complexes.
        Les interventions de Vietnam Espérance s’articulent autour de cinq axes complémentaires.
-  </section>
-<section class="grdboite">
+  </p>
+      </section>
+  
+  
+    
+      <section class="grdboite">
   <section class="boite1">            
-  1. Nourrir et répondre à l’urgence
+ <div class="container">
+    <img src="C:\Users\guill\Documents\vietnam-esperance\distribution de nouriture.png">
+ </div>
+ <p>  1. Nourrir et répondre à l’urgence
 L’association intervient ponctuellement lors de situations d’urgence, notamment en cas de catastrophes naturelles,
  afin de permettre la distribution de nourriture de première nécessité aux populations les plus isolées.
+  </p>
 </section>
 <section class="boite2">
-2.accompagner des projets existants
+<div class="container">
+  <img src="C:\Users\guill\Documents\vietnam-esperance\ecole.png">
+</div>
+  <p>    2.accompagner des projets existants
 Vietnam Espérance soutient durablement des écoles, foyers et centres d’accueil rencontrant des difficultés financières ponctuelles,
  afin d’assurer la continuité de leurs actions éducatives et sociales.
+ </p>
 </section>
 <section class="boite3">
-3. Développer des projets humanitaires durables
+<div class="container">
+  <img src="C:\Users\guill\Documents\vietnam-esperance\energie_eau.png">
+</div>
+  <p>  3. Développer des projets humanitaires durables
 L’association met en place des projets visant à améliorer durablement les conditions de vie,
- notamment par l’installation de panneaux solaires qui permette d'economiser 300 à 400 euros
+ notamment par l’installation de panneaux solaires qui permette d'économiser 300à 400 euros
  et l’accès à l’eau potable grâce à des systèmes de filtration.
 </section>
- <section class="boite4">
- 4. Soutenir l’éducation et la formation
+<section class="boite4">
+<div class="container">
+  <img src="C:\Users\guill\Documents\vietnam-esperance\solidarité_espoire_classe.png">
+</div>
+  <p> Soutenir l’éducation et la formation
 L’éducation est un pilier essentiel, en particulier auprès des minorités ethniques vivant dans des régions reculées. L’association soutient
  des projets permettant l’apprentissage de la langue nationale tout en respectant les cultures locales.
+ </p>
 </section>
  <section class="boite5">
- 5. Construire et rénover
+ <div class="container">
+  <img src="C:\Users\guill\Documents\vietnam-esperance\construire_renover.png">
+ </div>
+  <p>        5. Construire et rénover
 Vietnam Espérance accompagne la construction et la rénovation de lieux de culte, en particulier dans les zones où les infrastructures sont
  anciennes ou dégradées, afin de soutenir la vie des communautés locales.
+  </p>
 </section>
 </section>
 </p>
- <div style="text-align :center">
+  </div>
+<div style="text-align :center">
  
   <a href="index.html" class="btn">← Retour à l'accueil</a>
-<div/>
-<style>
-  .btn {
-    display: inline-block;
-    padding: 8px 14px;
-    border-radius: 6px;
-    text-decoration: none;
-    border: 1px solid #cc5c5c;   /* Bordure rouge moyen */
-    background:  #f55f5f;         /* ❤️ Rouge clair pastel */
-    color: #000;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align :center;
- }
+ </div>
 
-  .btn:hover {
-    background: #f77b7b;         /* Un peu plus vif au survol */
-  }
-</style>
+ 
+
 
 </body>
 </html>
