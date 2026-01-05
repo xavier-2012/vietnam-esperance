@@ -118,22 +118,23 @@ nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
  box-shadow: -3px 3px 7px gray;
  flex: 1;
 }
-    .grdboite {
-display:grid;
-grid-template-columns: repeat(3,1fr);
-grid-template-areas:
-a . b
-. c .
-d . e
-gap: 20px;
+   .grdboite{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a . b"
+    ". c ."
+    "d . e";
+  gap: 20px;
+  max-width: 1200px;
+  margin: 100px auto;
 }
 
-.boite:nth-child(1){grid-area:a;}
-.boite:nth-child(2){grid-area:b;}
-.boite:nth-child(3){grid-area:c;}
-.boite:nth-child(4){grid-area:d;}
-.boite:nth-child(5){grid-area:e;}
-
+.boite1 { grid-area: a; }
+.boite2 { grid-area: b; }
+.boite3 { grid-area: c; }
+.boite4 { grid-area: d; }
+.boite5 { grid-area: e; }
 
 .boitedebut p {
   font-size: 25px;
@@ -167,7 +168,17 @@ color: red
   .btn:hover {
     background: #f77b7b;         /* Un peu plus vif au survol */
   }
- 
+ @media (max-width: 768px) {
+  .grdboite{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+  }
+ }
  </style>
 </head>
 
@@ -254,7 +265,7 @@ Vietnam Espérance accompagne la construction et la rénovation de lieux de cult
   <a href="index.html" class="btn">← Retour à l'accueil</a>
  </div>
 
- 
+</section>
 
 
 </body>
