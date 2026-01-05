@@ -131,22 +131,29 @@
       background: #f77b7b;
     }
 
-    @media (max-width: 768px) {
-      .grdboite{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "a"
-          "b"
-          "c"
-          "d"
-          "e";
-      }
+    @media (max-width: 768px) {         /* Tout ce qui suit s'applique si l'écran fait 768px ou moins */
+  .grdboite{
+    display: grid;                  /* On garde le display grid */
+    grid-template-columns: 1fr;     /* Une seule colonne qui prend toute la largeur */
+    grid-template-areas:            /* Empile les boîtes verticalement */
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    gap: 20px;                      /* Espace entre chaque boîte */
+    margin: 50px auto;              /* Centrage horizontal et un peu de marge verticale */
+    padding: 0 10px;                /* Petit padding à gauche et à droite pour ne pas coller au bord */
+  }
 
-      .boite1, .boite2, .boite3, .boite4, .boite5 {
-        max-width: 90%;
-        margin: 20px auto;
-      }
-    }
+  .boite1, .boite2, .boite3, .boite4, .boite5 {
+    max-width: 100%;                /* Chaque boîte prend toute la largeur de la grille */
+    margin: 0 auto;                 /* Centre la boîte horizontalement */
+    box-sizing: border-box;         /* Inclut le padding et la bordure dans la largeur pour éviter que ça déborde */
+  }
+}
+
+    
   </style>
 </head>
 
