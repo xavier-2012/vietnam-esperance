@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Vietnam Espérance</title>
-</head>
-<body>
-   
   <style>
     /* ====== Styles généraux ====== */
     body {
@@ -18,10 +15,10 @@
     header {
       background-color: #fff;
       border-bottom: 3px solid #00aaff;
-     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
     }
 
     nav ul {
@@ -51,8 +48,7 @@
     nav ul li:nth-child(2) a { background-color: #2e6fa3; } /* bleu foncé */
     nav ul li:nth-child(3) a { background-color: #33a4cf; } /* bleu clair */
     nav ul li:nth-child(4) a { background-color: #f7d37b; } /* jaune */
-nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
-
+    nav ul li:nth-child(5) a { background-color: #f77b7b; } /* rouge */
 
     /* ====== Effets ====== */
     nav ul li a:hover,
@@ -63,123 +59,95 @@ nav ul li:nth-child(5) a { background-color: #f77b7b; } /*rouge*/
 
     main {
       text-align: center;
-      padding: 40px;
+      padding: 140px 40px 40px; /* padding top augmenté pour compenser header fixe */
     }
+
     div p {
       font-size: 25px;
     }
- .boite1 {
- max-width: 300px;
- margin: 40px;
- background-color: #ffffff;
- padding:40px;
- border: 3px solid #ddd;
- border-radius: 10px;
- box-shadow: -3px 3px 7px gray;
- flex: 1;
-}
- .boite2  {
- max-width: 45%;
- margin: 40px;
- background-color: #ffffff;
- padding :40px;
- border:3px solid #ddd;
- border-radius: 10px;
- box-shadow: -3px 3px 7px gray;
- flex: 1;
-}
- .boite3 {
- max-width: 300px;
- margin: 40px;
- background-color: #ffffff;
- padding:40px;
- border: 3px solid #ddd;
- border-radius: 10px;
- box-shadow: -3px 3px 7px gray;
- flex: 1;
-}
- .boite4 {
- max-width: 45%;
- margin: 40px;
- background-color: #ffffff;
- padding :40px;
- border:3px solid #ddd;
- border-radius: 10px;
- box-shadow: -3px 3px 7px gray;
- flex: 1;
-}
- .boite5 {
- max-width: 45%;
- margin: 40px;
- background-color: #ffffff;
- padding :40px;
- border:3px solid #ddd;
- border-radius: 10px;
- box-shadow: -3px 3px 7px gray;
- flex: 1;
-}
-   .grdboite{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "a . b"
-    ". c ."
-    "d . e";
-  gap: 20px;
-  max-width: 1200px;
-  margin: 100px auto;
-}
 
-.boite1 { grid-area: a; }
-.boite2 { grid-area: b; }
-.boite3 { grid-area: c; }
-.boite4 { grid-area: d; }
-.boite5 { grid-area: e; }
+    .boite1, .boite2, .boite3, .boite4, .boite5 {
+      max-width: 45%;
+      margin: 40px;
+      background-color: #ffffff;
+      padding: 40px;
+      border: 3px solid #ddd;
+      border-radius: 10px;
+      box-shadow: -3px 3px 7px gray;
+    }
 
-.boitedebut p {
-  font-size: 25px;
-  color: #f55f5f;
+    .boite1, .boite3 {
+      max-width: 300px;
+    }
 
-}
- h1{
-color: red
- }
- .container img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block; /* supprime les petits espaces sous l'image */
-  margin: auto;   /* centrer si nécessaire */
- border-radius:10px;
-}
- 
-  .btn {
-    display: inline-block;
-    padding: 8px 14px;
-    border-radius: 6px;
-    text-decoration: none;
-    border: 1px solid #cc5c5c;   /* Bordure rouge moyen */
-    background:  #f55f5f;         /* ❤️ Rouge clair pastel */
-    color: #000;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align :center;
- }
+    .grdboite{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "a b c"
+        "d e .";
+      gap: 20px;
+      max-width: 1200px;
+      margin: 100px auto;
+    }
 
-  .btn:hover {
-    background: #f77b7b;         /* Un peu plus vif au survol */
-  }
- @media (max-width: 768px) {
-  .grdboite{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d"
-      "e";
-  }
- }
- </style>
+    .boite1 { grid-area: a; }
+    .boite2 { grid-area: b; }
+    .boite3 { grid-area: c; }
+    .boite4 { grid-area: d; }
+    .boite5 { grid-area: e; }
+
+    .boitedebut p {
+      font-size: 25px;
+      color: #f55f5f;
+    }
+
+    h1{
+      color: red;
+    }
+
+    .container img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: auto;
+      border-radius:10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid #cc5c5c;
+      background:  #f55f5f;
+      color: #000;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #f77b7b;
+    }
+
+    @media (max-width: 768px) {
+      .grdboite{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "a"
+          "b"
+          "c"
+          "d"
+          "e";
+      }
+
+      .boite1, .boite2, .boite3, .boite4, .boite5 {
+        max-width: 90%;
+        margin: 20px auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -187,86 +155,89 @@ color: red
   <header>
     <nav>
       <ul class="menu">
-        <li><a href="association.html" class="active">L'association</a></li>                                                                 <li><a href="actions.html">Nos actions</a></li>
-   <li><a href="contact.html">Contacts</a></li>
-  <li><a href="don.html">Faire un don</a></li>
-   <li><a href="histoire.html">un peu d'histoire</a></li>  
- </ul>
+        <li><a href="association.html" class="active">L'association</a></li>                                                                 
+        <li><a href="actions.html">Nos actions</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="don.html">Faire un don</a></li>
+        <li><a href="histoire.html">Un peu d'histoire</a></li>  
+      </ul>
     </nav>
   </header>
 
   <main>
-  <h1>Nos actions</h1>
-</head>
+    <h1>Nos actions</h1>
 
-<section class="boitedebut">
+    <section class="boitedebut">
+      <p>
+        L'association Vietnam Espérance agit au Vietnam auprès des populations les plus défavorisées,
+        en étroite collaboration avec les communautés religieuses locales. Son action s’est progressivement déployée sur l’ensemble du pays,
+        du sud jusqu’au nord, malgré des contextes parfois complexes.
+        Les interventions de Vietnam Espérance s’articulent autour de cinq axes complémentaires.
+      </p>
+    </section>
 
-  <p> l'association Vietnam Espérance agit au Vietnam auprès des populations les plus défavorisées,
-     en étroite collaboration avec les communautés religieuses locales. Son action s’est progressivement déployée sur l’ensemble du pays,
-      du sud jusqu’au nord, malgré des contextes parfois complexes.
-       Les interventions de Vietnam Espérance s’articulent autour de cinq axes complémentaires.
-  </p>
+    <section class="grdboite">
+      <section class="boite1">            
+        <div class="container">
+          <img src="distribution_nourriture.png" alt="Distribution de nourriture">
+        </div>
+        <p>
+          1. Nourrir et répondre à l’urgence<br>
+          L’association intervient ponctuellement lors de situations d’urgence, notamment en cas de catastrophes naturelles,
+          afin de permettre la distribution de nourriture de première nécessité aux populations les plus isolées.
+        </p>
       </section>
-  
-  
-    
-      <section class="grdboite">
-  <section class="boite1">            
- <div class="container">
-    <img src="distribution de nouriture.png">
- </div>
- <p>  1. Nourrir et répondre à l’urgence
-L’association intervient ponctuellement lors de situations d’urgence, notamment en cas de catastrophes naturelles,
- afin de permettre la distribution de nourriture de première nécessité aux populations les plus isolées.
- 
-</p>
-</section>
-<section class="boite2">
-<div class="container">
-  <img src="ecole.png">
-</div>
-  <p>    2.accompagner des projets existants
-Vietnam Espérance soutient durablement des écoles, foyers et centres d’accueil rencontrant des difficultés financières ponctuelles,
- afin d’assurer la continuité de leurs actions éducatives et sociales.
- </p>
-</section>
-<section class="boite3">
-<div class="container">
-  <img src="energie_eau.png">
-</div>
-  <p>  3. Développer des projets humanitaires durables
-L’association met en place des projets visant à améliorer durablement les conditions de vie,
- notamment par l’installation de panneaux solaires qui permette d'économiser 300à 400 euros
- et l’accès à l’eau potable grâce à des systèmes de filtration.
-</section>
-<section class="boite4">
-<div class="container">
-  <img src="solidarité_espoire_classe.png">
-</div>
-  <p> Soutenir l’éducation et la formation
-L’éducation est un pilier essentiel, en particulier auprès des minorités ethniques vivant dans des régions reculées. L’association soutient
- des projets permettant l’apprentissage de la langue nationale tout en respectant les cultures locales.
- </p>
-</section>
- <section class="boite5">
- <div class="container">
-  <img src="construire_renover.png">
- </div>
-  <p>        5. Construire et rénover
-Vietnam Espérance accompagne la construction et la rénovation de lieux de culte, en particulier dans les zones où les infrastructures sont
- anciennes ou dégradées, afin de soutenir la vie des communautés locales.
-  </p>
-</section>
-</section>
-</p>
-  </div>
-<div style="text-align :center">
- 
-  <a href="index.html" class="btn">← Retour à l'accueil</a>
- </div>
 
-</section>
+      <section class="boite2">
+        <div class="container">
+          <img src="ecole.png" alt="Soutien aux écoles">
+        </div>
+        <p>
+          2. Accompagner des projets existants<br>
+          Vietnam Espérance soutient durablement des écoles, foyers et centres d’accueil rencontrant des difficultés financières ponctuelles,
+          afin d’assurer la continuité de leurs actions éducatives et sociales.
+        </p>
+      </section>
 
+      <section class="boite3">
+        <div class="container">
+          <img src="energie_eau.png" alt="Énergie et eau">
+        </div>
+        <p>
+          3. Développer des projets humanitaires durables<br>
+          L’association met en place des projets visant à améliorer durablement les conditions de vie,
+          notamment par l’installation de panneaux solaires qui permettent d'économiser 300 à 400 euros
+          et l’accès à l’eau potable grâce à des systèmes de filtration.
+        </p>
+      </section>
 
+      <section class="boite4">
+        <div class="container">
+          <img src="solidarite_espoir_classe.png" alt="Éducation et formation">
+        </div>
+        <p>
+          4. Soutenir l’éducation et la formation<br>
+          L’éducation est un pilier essentiel, en particulier auprès des minorités ethniques vivant dans des régions reculées. L’association soutient
+          des projets permettant l’apprentissage de la langue nationale tout en respectant les cultures locales.
+        </p>
+      </section>
+
+      <section class="boite5">
+        <div class="container">
+          <img src="construire_renover.png" alt="Construire et rénover">
+        </div>
+        <p>
+          5. Construire et rénover<br>
+          Vietnam Espérance accompagne la construction et la rénovation de lieux de culte, en particulier dans les zones où les infrastructures sont
+          anciennes ou dégradées, afin de soutenir la vie des communautés locales.
+        </p>
+      </section>
+    </section>
+
+    <div style="text-align:center">
+      <a href="index.html" class="btn">← Retour à l'accueil</a>
+    </div>
+
+  </main>
 </body>
 </html>
